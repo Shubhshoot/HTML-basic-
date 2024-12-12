@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio & Video Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #662929;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .category {
+            margin-bottom: 40px;
+        }
+        .videos, .audios {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .video, .audio {
+            flex: 1 1 calc(33% - 40px);
+            max-width: 400px;
+        }
+        iframe {
+            width: 100%;
+            height: 200px;
+        }
+        audio {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Audio & Video Gallery</h1>
+</header>
+
+<div class="container">
+    <!-- Video Category Section -->
+    <div class="category">
+        <h2>Video Category 1: Nature</h2>
+        <div class="videos">
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AKeUssuu3Is?si=Ooi-0xJoA6OL4wyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Category Section -->
+    <div class="category">
+        <h2>Video Category 2: Technology</h2>
+        <div class="videos">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tHvJyNScrCE?si=YmPVhV8rVe-xosxy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/LXb3EKWsInQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0yttL0e1Pak?si=jxuC2GgaFMFQV6WD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  </div>
+        </div>
+    </div>
+
+    <!-- Audio Category Section -->
+    <div class="category">
+        <h2>Audio Category: Music</h2>
+        <div class="audios">
+            <div class="audio">
+                <audio controls>
+                    <source src="click.mpeg" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>Track 1</p>
+            </div>
+            <div class="audio">
+                <audio controls>
+                    <source src="woosh.mpeg" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>Track 2</p>
+            </div>
+            <div class="audio">
+                <audio controls>
+                    <source src="ding.mpeg" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>Track 3</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
